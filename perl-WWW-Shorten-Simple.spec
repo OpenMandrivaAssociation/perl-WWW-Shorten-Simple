@@ -1,15 +1,15 @@
 %define upstream_name    WWW-Shorten-Simple
-%define upstream_version 0.01
+%define upstream_version 0.02
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	4
+Version:	%{upstream_version}
+Release:	1
 
 Summary:	Factory wrapper around WWW::Shorten to avoid imports
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/WWW/%{upstream_name}-%{upstream_version}.tar.gz
+Url:		https://github.com/miyagawa/www-shorten-simple
+Source0:	https://cpan.metacpan.org/authors/id/M/MI/MIYAGAWA/WWW-Shorten-Simple-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
