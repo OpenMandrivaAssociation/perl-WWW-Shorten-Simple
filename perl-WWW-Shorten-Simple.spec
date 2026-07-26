@@ -1,15 +1,13 @@
 %define upstream_name    WWW-Shorten-Simple
-%define upstream_version 0.02
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	1
+Version:	0.02
+Release:	2
 
 Summary:	Factory wrapper around WWW::Shorten to avoid imports
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://github.com/miyagawa/www-shorten-simple
-Source0:	https://cpan.metacpan.org/authors/id/M/MI/MIYAGAWA/WWW-Shorten-Simple-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/M/MI/MIYAGAWA/WWW-Shorten-Simple-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -27,7 +25,7 @@ service, instead of importing makeashorterlink function into your
 namespace.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
